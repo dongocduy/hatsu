@@ -1,0 +1,23 @@
+if SHIELD_HATSU_LEFT
+
+    config ZMK_KEYBOARD_NAME
+        default "Hatsu-L"
+
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+
+endif
+
+if SHIELD_HATSU_RIGHT
+
+    config ZMK_KEYBOARD_NAME
+        default "Hatsu-R"
+
+endif
+
+if SHIELD_HATSU_LEFT || SHIELD_HATSU_RIGHT
+
+    config ZMK_SPLIT
+        default y
+
+endif
